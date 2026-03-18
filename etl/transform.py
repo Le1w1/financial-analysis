@@ -14,6 +14,7 @@ def calculate_metrics(df: pd.DataFrame) -> pd.DataFrame:
     df["MA20"] = df["close"].rolling(window=20).mean()
     df["MA50"] = df["close"].rolling(window=50).mean()
     df["daily_return"] = df["close"].pct_change()
+    df["volatility_20"] = df["daily_return"].rolling(window=20).std()
     return df
 
 
