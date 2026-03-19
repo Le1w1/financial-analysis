@@ -49,10 +49,12 @@ Precio de cierre con medias móviles superpuestas. Permite identificar visualmen
 ![Análisis Individual](reports/images/01_analisis_individual.png)
 
 
+
 **Comparación de Precios**
 
 Las 4 acciones en el mismo gráfico. MSFT opera a precios significativamente más altos. GOOGL y AMZN muestran tendencias similares en el período analizado.
 ![Comparacion de Precios](reports/images/02_comparacion.png)
+
 
 
 **Volatilidad — ¿Cuál es la acción más riesgosa?**
@@ -61,10 +63,12 @@ AMZN fue la acción más volátil del período (riesgo más alto). AAPL la más 
 ![Volatilidad](reports/images/03_volatilidad.png)
 
 
+
 **Volumen de Operaciones**
 
 Los picos de volumen en noviembre 2025 y febrero 2026 coinciden exactamente con los picos de volatilidad — confirmando la correlación entre volumen y movimientos bruscos de precio. AMZN y AAPL son las acciones más transadas del período.
 ![volumen de Operaciones](reports/images/04_volumen.png)
+
 
 
 **Retorno Acumulado — ¿Cuál fue la mejor inversión?**
