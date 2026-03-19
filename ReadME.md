@@ -46,6 +46,7 @@ Alpha Vantage API
 **Análisis Individual — AAPL, MSFT, GOOGL, AMZN**
 
 Precio de cierre con medias móviles superpuestas. Permite identificar visualmente si una acción está en tendencia alcista o bajista respecto a su promedio histórico.
+
 ![Análisis Individual](reports/images/01_analisis_individual.png)
 
 
@@ -53,6 +54,7 @@ Precio de cierre con medias móviles superpuestas. Permite identificar visualmen
 **Comparación de Precios**
 
 Las 4 acciones en el mismo gráfico. MSFT opera a precios significativamente más altos. GOOGL y AMZN muestran tendencias similares en el período analizado.
+
 ![Comparacion de Precios](reports/images/02_comparacion.png)
 
 
@@ -60,6 +62,7 @@ Las 4 acciones en el mismo gráfico. MSFT opera a precios significativamente má
 **Volatilidad — ¿Cuál es la acción más riesgosa?**
 
 AMZN fue la acción más volátil del período (riesgo más alto). AAPL la más estable. Todas convergieron hacia niveles similares en marzo 2026, lo que indica una normalización del mercado.
+
 ![Volatilidad](reports/images/03_volatilidad.png)
 
 
@@ -67,6 +70,7 @@ AMZN fue la acción más volátil del período (riesgo más alto). AAPL la más 
 **Volumen de Operaciones**
 
 Los picos de volumen en noviembre 2025 y febrero 2026 coinciden exactamente con los picos de volatilidad — confirmando la correlación entre volumen y movimientos bruscos de precio. AMZN y AAPL son las acciones más transadas del período.
+
 ![volumen de Operaciones](reports/images/04_volumen.png)
 
 
@@ -78,6 +82,7 @@ GOOGL → +36% de retorno. La mejor inversión del período.
 AMZN → +15%
 AAPL → +10%
 MSFT → +4%. La peor performance del grupo.
+
 ![Retorno Acumulado](reports/images/05_retorno_acumulado.png)
 
 
