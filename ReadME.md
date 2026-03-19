@@ -1,18 +1,22 @@
-📊 Financial Analysis Dashboard
+# 📊 Financial Analysis Dashboard:
+
 Pipeline de datos end-to-end que extrae precios históricos de acciones en tiempo real, los procesa con Python y los visualiza en un dashboard interactivo de Power BI.
 
-🔍 Problema que resuelve
+# 🔍 Problema que resuelve:
+
 Los inversores necesitan comparar el rendimiento, riesgo y tendencia de múltiples acciones en un solo lugar. Este proyecto automatiza ese proceso: desde la extracción de datos crudos hasta la visualización de métricas financieras clave, sin intervención manual.
 
-🛠️ Stack tecnológico
-Capa                    Tecnología
-Extracción              Python + Alpha Vantage API
-Transformación          Pandas
-Almacenamiento          SQL Server
-Visualización           Power BI
-Control de versiones    Git + GitHub
+# 🛠️ Stack tecnológico
 
-⚙️ Arquitectura del pipeline
+Capa: Tecnología
+Extracción: Python + Alpha Vantage API
+Transformación: Pandas
+Almacenamiento: SQL Server
+Visualización: Power BI
+Control de versiones: Git + GitHub
+
+# ⚙️ Arquitectura del pipeline
+
 Alpha Vantage API
        ↓
   extract.py       →   Extrae precios históricos de 4 acciones vía HTTP
@@ -23,7 +27,7 @@ Alpha Vantage API
        ↓
   Power BI         →   Dashboard interactivo con 5 páginas de análisis
 
-📈 Métricas calculadas
+# 📈 Métricas calculadas
 
 MA20 / MA50: Medias móviles de 20 y 50 días para identificar tendencias
 Retorno diario: Variación porcentual del precio de cierre día a día
@@ -31,7 +35,7 @@ Volatilidad 20 días: Desvío estándar del retorno en ventana móvil, mide el r
 Retorno acumulado: Rendimiento total desde el inicio del período
 
 
-💡 Insights del dashboard
+# 💡 Insights del dashboard
 Análisis Individual — AAPL, MSFT, GOOGL, AMZN
 Precio de cierre con medias móviles superpuestas. Permite identificar visualmente si una acción está en tendencia alcista o bajista respecto a su promedio histórico.
 ![Análisis Individual](reports/images/01_analisis_individual.png)
@@ -56,7 +60,7 @@ AAPL → +10%
 MSFT → +4%. La peor performance del grupo.
 ![Retorno Acumulado](reports/images/05_retorno_acumulado.png)
 
-🚀 Cómo ejecutar
+# 🚀 Cómo ejecutar
 
 1. Clonar el repositorio
 2. Crear un archivo .env en la raíz con el siguiente contenido:
@@ -68,5 +72,6 @@ MSFT → +4%. La peor performance del grupo.
 4. Abrir en Power BI Desktop
 reports/financial_analysis_dashboard.pbix 
 
-📦 Acciones analizadas
+# 📦 Acciones analizadas
 AAPL · MSFT · GOOGL · AMZN — Últimos 100 días hábiles de mercado (oct 2025 – mar 2026)
+
