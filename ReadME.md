@@ -56,21 +56,6 @@ AAPL → +10%
 MSFT → +4%. La peor performance del grupo.
 ![Retorno Acumulado](reports/images/05_retorno_acumulado.png)
 
-🗂️ Estructura del proyecto
-financial-analysis/
-├── data/                        # CSVs con datos históricos por acción
-├── etl/
-│   ├── extract.py               # Extracción modular desde Alpha Vantage API
-│   └── transform.py             # Cálculo de métricas y carga a SQL Server
-├── notebooks/
-│   ├── 01_extract.ipynb         # Exploración del pipeline de extracción
-│   └── 02_transform.ipynb       # Exploración del pipeline de transformación
-├── reports/
-│   ├── images/                  # Capturas del dashboard
-│   └── financial_analysis_dashboard.pbix
-├── .env                         # Variables de entorno (no versionado)
-├── .gitignore
-└── README.md
 
 🚀 Cómo ejecutar
 
