@@ -30,6 +30,28 @@ Alpha Vantage API
        ↓
   Power BI          →   Dashboard interactivo con 5 páginas de análisis
 ```
+## 🗄️ SQL Server — Vista de resumen
+
+Se creó una vista analítica `vw_resumen_acciones` que consolida las métricas clave de cada acción en una sola query:
+
+```sql
+CREATE VIEW vw_resumen_acciones AS
+SELECT 
+    symbol,
+    COUNT(*) AS total_dias,
+    ROUND(AVG([close]), 2) AS precio_promedio,
+    ROUND(MAX([close]), 2) AS precio_maximo,
+    ROUND(MIN([close]), 2) AS precio_minimo,
+    ROUND(MAX([close]) - MIN([close]), 2) AS rango_precio,
+    ROUND(AVG([daily_return]) * 100, 4) AS retorno_diario_promedio_pct,
+    ROUND(AVG([volatility_20]) * 100, 4) AS volatilidad_promedio_pct,
+    ROUND(MAX([cumulative_return]) * 100, 2) AS retorno_acumulado_pct
+FROM stock_metrics
+GROUP BY symbol;
+```
+
+Esta vista es consumida directamente por Power BI para la página de resumen del dashboard.
+
 
 # 📈 Métricas calculadas
 
