@@ -17,6 +17,8 @@ Este proyecto automatiza ese proceso: desde la extracción de datos crudos hasta
 | Visualización        | Power BI 
 | Control de versiones | Git + GitHub 
 ```
+> Los notebooks en `notebooks/` documentan el proceso de exploración. 
+> El código de producción está en `etl/`.
 
 # ⚙️ Arquitectura del pipeline
 ```
@@ -30,6 +32,7 @@ Alpha Vantage API
        ↓
   Power BI          →   Dashboard interactivo con 5 páginas de análisis
 ```
+
 ## 🗄️ SQL Server — Vista de resumen
 
 Se creó una vista analítica `vw_resumen_acciones` que consolida las métricas clave de cada acción en una sola query:
